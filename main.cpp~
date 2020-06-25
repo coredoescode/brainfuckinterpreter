@@ -1,0 +1,9 @@
+#include <iostream>
+#include "cxxopts.hpp"
+
+int main(int argc, char **argv) {
+    cxxopts::Options options("BFInterpreter", "A random bf interpreter made by three nerds in discord.");
+    options.add_options()
+	    ("f,file", "Specifies the file to parse");
+
+}
