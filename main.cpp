@@ -21,6 +21,7 @@ int main(int argc, char **argv) {
 	ostringstream ss;
 	ss << file.rdbuf();
 	fileText = ss.str();
+	interpret(fileText);
     } else {
 	    cout << "Unable to open file " << file_path << endl;
 	    return -1;
