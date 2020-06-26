@@ -1,5 +1,5 @@
 # brainfuckinterpreter
-A BF interpreter made by three bored nerda on discord.
+A BF interpreter made by three bored nerds on discord.
 
 # How does it work?
 It dosen't.
