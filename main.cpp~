@@ -1,8 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
 #include "cxxopts.hpp"
-#include "interpreter.cpp"
 
 using namespace std;
 
@@ -13,14 +11,11 @@ int main(int argc, char **argv) {
 
     auto opts = options.parse(argc, argv);
 
-    string file_path = opts["file"].as<string>();
+    file_path = opts["file"].as<string>();
 
     ifstream file (file_path);
-    string fileText
     if (file.is_open()) {
-	ostringstream ss;
-	ss << file.rdbuf();
-	fileText = ss.str();
+
     } else {
 	    cout << "Unable to open file " << file_path << endl;
 	    return -1;
