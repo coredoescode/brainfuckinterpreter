@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     string file_path = opts["file"].as<string>();
 
     ifstream file (file_path);
-    string fileText
+    string fileText;
     if (file.is_open()) {
 	ostringstream ss;
 	ss << file.rdbuf();
